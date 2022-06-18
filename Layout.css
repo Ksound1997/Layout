@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --pcolor: hsla(0, 0%, 100%, 0.75);
+    --lightgray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--lightgray);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--Darkcyan);
+}
+header h1{
+    color: white;
+}
+header .cc{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-family:'Lexend Deca', sans-serif;
+    background-color: var(--Brightorange);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    
+}
+
+.cc:hover  {
+    background-color: var(--lightgray);
+    color: black;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.first {
+    background-color: var(--Brightorange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.second {
+    background-color: var(--Darkcyan);
+}
+
+.third {
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card h3 {
+    color: var(--lightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: var(--pcolor);
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card a {
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 9px 35px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--pcolor);
+    transition: .5s ease-in-out;
+}
+a:hover{
+    background-color: white;
+} 
+.first a:hover{
+    color: var(--Brightorange);
+}
+.second a:hover{
+    color:var(--Darkcyan);
+}
+.third a:hover{
+    color:var(--Verydarkcyan) ;
+}
+.card {
+    height: 350px;
+    padding: 30px 30px;
+}
+
+.card img {
+    margin-bottom: 25px;
+    width: 50px;
+}
